@@ -5,10 +5,8 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Role</th>
+          <th scope="col">FileType</th>
+          <th scope="col">Photographer</th>
           <th scope="col">Date Created</th>
           <th scope="col">Edit</th>
           <th scope="col">Delete</th>
@@ -18,8 +16,6 @@
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
           <td>

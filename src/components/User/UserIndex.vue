@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button type="button" class="btn btn-primary">Add User</button>
+        <button @click="goToCreateUser" type="button" class="btn btn-primary">Add User</button>
       </div>
     </div>
     <!-- /Create button -->
@@ -25,6 +25,11 @@ export default {
     return {
       teste: "teste"
     };
+  },
+  methods: {
+    goToCreateUser() {
+      this.$router.push({ name: "userCreate" });
+    }
   },
   components: {
     UserList

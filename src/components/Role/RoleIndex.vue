@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button type="button" class="btn btn-primary">Add Role</button>
+        <button @click="goToCreateRole" class="btn btn-primary">Add Role</button>
       </div>
     </div>
     <!-- /Create button -->
@@ -25,6 +25,11 @@ export default {
     return {
       teste: "teste"
     };
+  },
+  methods: {
+    goToCreateRole() {
+      this.$router.push({ name: "roleCreate" });
+    }
   },
   components: {
     RoleList

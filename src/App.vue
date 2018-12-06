@@ -8,38 +8,29 @@
       <router-link to="/faces">Faces</router-link>|
       <router-link to="/pictures">Pictures</router-link>|
       <router-link to="/locations">Locations</router-link>|
-      <router-link to="/analytics">Analytics</router-link>
+      <router-link to="/analytics">Analytics</router-link>|
       <router-link to="/login">Login</router-link>
     </div>
     <router-view/>
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    >
   </div>
 </template>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+body {
+  font-family: "Ubuntu", sans-serif !important;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.row {
+  margin-bottom: 10px;
+  padding: 40px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn {
+  margin-right: 20px;
+}
+.form-check {
+  margin-bottom: 20px;
 }
 </style>

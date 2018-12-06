@@ -3,14 +3,14 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button @click="goToCreatePermission" class="btn btn-primary">Add Permission</button>
+        <button @click="goToCreatePicture" class="btn btn-primary">Add Picture</button>
       </div>
     </div>
     <!-- /Create button -->
     <!-- Table -->
     <div class="row justify-content-md-center">
       <div class="col">
-        <permission-list></permission-list>
+        <picture-list></picture-list>
       </div>
     </div>
     <!-- /Table -->
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import PermissionList from "@/components/Permission/PermissionList";
+import PictureList from "@/components/Picture/PictureList";
 
 export default {
   data: () => {
@@ -27,12 +27,12 @@ export default {
     };
   },
   methods: {
-    goToCreatePermission() {
-      this.$router.push({ name: "permissionCreate" });
+    goToCreatePicture() {
+      this.$router.push({ name: "pictureCreate" });
     }
   },
   components: {
-    PermissionList
+    PictureList
   }
 };
 </script>

@@ -5,10 +5,13 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Role</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Country</th>
+          <th scope="col">State</th>
+          <th scope="col">City</th>
+          <th scope="col">Reference 1</th>
+          <th scope="col">Reference 2</th>
           <th scope="col">Date Created</th>
           <th scope="col">Edit</th>
           <th scope="col">Delete</th>
@@ -18,6 +21,9 @@
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
+          <td>Otto</td>
+          <td>Otto</td>
+          <td>Otto</td>
           <td>Otto</td>
           <td>@mdo</td>
           <td>@mdo</td>
