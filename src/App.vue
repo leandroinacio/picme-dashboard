@@ -1,19 +1,26 @@
 <template>
   <div id="app" class="container-fluid">
     <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/users">Users</router-link>|
-      <router-link to="/roles">Roles</router-link>|
-      <router-link to="/permissions">Permissions</router-link>|
-      <router-link to="/faces">Faces</router-link>|
-      <router-link to="/pictures">Pictures</router-link>|
-      <router-link to="/locations">Locations</router-link>|
-      <router-link to="/analytics">Analytics</router-link>|
-      <router-link to="/login">Login</router-link>
+      <home v-if="isLogged"></home>
+      <login v-if="!isLogged"></login>
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import Home from "./views/Home.vue";
+import Login from "./components/Auth/Login.vue";
+
+export default {
+  data() {
+    return {
+      isLogged: false
+    };
+  },
+  components: { Home, Login }
+};
+</script>
+
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
