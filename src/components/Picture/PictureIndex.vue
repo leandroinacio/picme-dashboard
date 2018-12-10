@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button @click="goToCreatePicture" class="btn btn-primary">Add Picture</button>
+        <router-link to="/pictureCreate" tag="button" class="btn btn-primary">Add Picture</router-link>
       </div>
     </div>
     <!-- /Create button -->
@@ -25,11 +25,6 @@ export default {
     return {
       teste: "teste"
     };
-  },
-  methods: {
-    goToCreatePicture() {
-      this.$router.push({ name: "pictureCreate" });
-    }
   },
   components: {
     PictureList

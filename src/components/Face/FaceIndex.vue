@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button @click="goToCreateFace" class="btn btn-primary">Add Face</button>
+        <router-link to="/faceCreate" tag="button" class="btn btn-primary">Add Face</router-link>
       </div>
     </div>
     <!-- /Create button -->
@@ -25,11 +25,6 @@ export default {
     return {
       teste: "teste"
     };
-  },
-  methods: {
-    goToCreateFace() {
-      this.$router.push({ name: "faceCreate" });
-    }
   },
   components: {
     FaceList

@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button @click="goToCreatePermission" class="btn btn-primary">Add Permission</button>
+        <router-link to="/permissionCreate" tag="button" class="btn btn-primary">Add Permission</router-link>
       </div>
     </div>
     <!-- /Create button -->
@@ -25,11 +25,6 @@ export default {
     return {
       teste: "teste"
     };
-  },
-  methods: {
-    goToCreatePermission() {
-      this.$router.push({ name: "permissionCreate" });
-    }
   },
   components: {
     PermissionList

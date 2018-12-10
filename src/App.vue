@@ -14,7 +14,7 @@ import Login from "./components/Auth/Login.vue";
 export default {
   data() {
     return {
-      isLogged: false
+      isLogged: true
     };
   },
   components: { Home, Login }

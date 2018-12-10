@@ -3,7 +3,7 @@
     <!-- Create button -->
     <div class="row justify-content-end">
       <div class="col-1">
-        <button type="button" class="btn btn-primary">Add Location</button>
+        <router-link to="/locationCreate" tag="button" class="btn btn-primary">Add Location</router-link>
       </div>
     </div>
     <!-- /Create button -->

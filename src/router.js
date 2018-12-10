@@ -9,6 +9,7 @@ import RoleCreate from "./components/Role/RoleCreate.vue";
 import Permission from "./components/Permission/PermissionIndex.vue";
 import PermissionCreate from "./components/Permission/PermissionCreate.vue";
 import Location from "./components/Location/LocationIndex.vue";
+import LocationCreate from "./components/Location/LocationCreate.vue";
 import Picture from "./components/Picture/PictureIndex.vue";
 import PictureCreate from "./components/Picture/PictureCreate.vue";
 import Face from "./components/Face/FaceIndex.vue";
@@ -25,6 +26,11 @@ export default new Router({
     },
     {
       path: "/login",
+      name: "login",
+      component: Login
+    },
+    {
+      path: "/logoff",
       name: "login",
       component: Login
     },
@@ -62,6 +68,11 @@ export default new Router({
       path: "/locations",
       name: "location",
       component: Location
+    },
+    {
+      path: "/locationCreate",
+      name: "locationCreate",
+      component: LocationCreate
     },
     {
       path: "/pictures",
