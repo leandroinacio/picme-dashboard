@@ -54,9 +54,9 @@
 export default {
   data: () => {
     return {};
-  },
-  created() {
-    this.$store.dispatch("userModule/login", { asd: "123" });
   }
+  // created() {
+  //   this.$store.dispatch("security/login", { asd: "123" });
+  // }
 };
 </script>

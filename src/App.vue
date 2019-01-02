@@ -1,15 +1,13 @@
 <template>
   <div id="app" class="container-fluid">
     <div id="nav">
-      <home v-if="isLogged"></home>
-      <login v-if="!isLogged"></login>
+      <home></home>
     </div>
   </div>
 </template>
 
 <script>
 import Home from "./views/Home.vue";
-import Login from "./components/Auth/Login.vue";
 
 export default {
   data() {
@@ -17,7 +15,7 @@ export default {
       isLogged: true
     };
   },
-  components: { Home, Login }
+  components: { Home }
 };
 </script>
 

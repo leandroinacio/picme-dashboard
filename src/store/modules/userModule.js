@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const state = {
   users: ["test", "222"],
   page: 1,
@@ -17,7 +19,9 @@ const getters = {
 
 const actions = {
   login({ commit }, request) {
-    commit("login", request);
+    axios
+      .post("http://localhost:8082/auth/login", request)
+      .then(data => commit("login", data));
   },
   saveUser({ commit }, user) {
     commit("saveUser", user);
@@ -40,8 +44,8 @@ const mutations = {
   deleteUser(state, user) {
     console.log(user);
   },
-  login(state, request) {
-    console.log(request);
+  login(state, data) {
+    console.log(data);
   },
   logoff(state, request) {
     console.log(request);
